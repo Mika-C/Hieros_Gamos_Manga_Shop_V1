@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Solway&family=Titillium+Web:ital@1&family=Zen+Dots&display=swap');
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: medium;
+}
+
+#date_time{
+    font-family: 'Solway', serif;
+    font-size: large;
+}
+
+ h1, h2{
+    font-family: 'Righteous', cursive;
+    font-size: 5rem;
+}
+
+#cart_table tr{
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+}
+
+#tbody_cart{
+    text-align: center;
+    word-wrap:break-word;
+    word-wrap:normal;
+}
+footer{
+    font-family: 'Zen Dots', cursive;
+    font-size: 20px;
+}

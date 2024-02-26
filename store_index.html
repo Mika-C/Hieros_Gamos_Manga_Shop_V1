@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        </htmlhtml lang="en-CA">
+        <title>Hieros Gamos Manga Store</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style/main.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container-fluid align-content-end" id="date/currency_container">
+            <div class="row" id="date_time"></div>
+                <select class="form-select-sm float-end" id="currencySelector">
+                    <option selected value="CAD">CAD</option>
+                    <option value="USD">USD</option>
+                    <option value="JAP">YEN</option>
+                </select>
+            </div>
+        </div>
+
+        <nav class="navbar-expand navbar-dark bg-dark nav-item-center">
+                <a href="#Store Items"> <img src="/img/icons/logo.png"></a>
+                <a href="#Select Item"><img src="/img/icons/reviews_nav.png"></a>
+                <a href="#Your Cart"><img src="/img/icons/cart.png"></a>
+        </nav>
+        
+        <div class="header text-center">
+            <h1>Hieros Gamos: <i>Manga Store</i></h1>
+            <h2>Store Items</h2>
+        </div>
+
+        <div class="container-fluid" id="product_container">
+
+            <select class="form-select" id="displayGenreFilter">
+				<option>All</option>
+                <option>SPORTS</option>
+                <option>THRILLER</option>
+                <option>SHONEN MANGA</option>
+                <option>SPORTS THRILLER</option>
+			</select>
+            <br>
+
+            <div class="countainer">
+                <div class="table-responsive" id="product_table">
+                    <Table class="table">
+                        <thead></thead>
+                        <tbody></tbody>
+                    </Table>   
+                </div>
+            </div>
+            <br>
+            <br>
+
+        <div class="container-fluid" id="details_container">
+            <form>
+                <fieldset>
+                    <legend><h2>Select Item To View Details, Delete or Add to your Cart</h2></legend>
+
+                    <div class="row" id="id_item">
+                        <label for="item_id" class="form-label">Item ID</label>
+                        <input type="text" id="item_id" class="form-control" name="id">
+                        <span id="addIDValidationMessage"></span>
+                    </div>
+                    <br>
+
+                    <div class="row" id="id_qty">
+                        <label for="item_qty" class="form-label">Quantity</label>
+                        <input type="number" id="item_qty" class="form-control" name="QTY">
+                        <span id="addQtyValidationMessage"></span>
+                    </div>
+                    <br>
+
+                    <div id="buttons">
+                        <input type="button" class="btn btn-dark" id="addBtn" value="Add to Cart" src="/img/icons/add_shopping_cart.png">
+                        <input type="button" class="btn btn-dark" id="deleteBtn" value="Remove from Cart" src="/img/icons/remove_shopping_cart.png">
+                        <input type="button" class="btn btn-dark" id="review_Btn" value="Check Item Details" src="/img/icons/details.png">
+                    </div>
+                </fieldset>
+                
+            </form>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="container-fluid" id="cart_container">
+            <div class="row" id="header">
+                <div class="col">
+                    <h1>Your Cart</h1>
+                </div>
+            </div>
+
+            <table class="table justify-content-center table-bordered" id="cart_table">
+                <thead>
+                    <tr class="text-center table-dark">
+                        <th>ID</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center" id="tbody_cart">
+                    
+                </tbody>
+            </table>
+            <div class="row" id="cartOutput"></div>
+            <hr>
+            <div id="cartCheckout"></div>
+        </div>
+        <br>
+        <br>
+
+        <div class="container-fluid" id="details_container">
+            <form>
+                <fieldset>
+                    <legend>Select Item To View Details</legend>
+                    <div>
+                        <label for="product_id">Product ID:</label>
+                        <input type="text" id="product_id" class="form-control" name="id">
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="item_review">Review:</label>
+                        <input type="text" id="item_review" class="form-control"  name="QTY">
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="rating">Rating out of 5:</label>
+                        <input type="number" id="rating" class="form-control" name="rating">
+                    </div>
+                    <br>
+
+                    <div >
+                        <input type="button" id="reviewBtn" class="btn btn-dark" value="Review" src="/img/icons/reviews.png">
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+        <br>
+
+        <footer>
+            <div class="container-fluid" id="credits">
+              <div class="row align-items-end text-bg-dark text-lg-center text-md-center">
+                <div class="col">
+                  <p><strong>Develop by Tanya N.Masiala</strong></p>
+                </div>
+              </div>
+            </div>
+        </footer>  
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
